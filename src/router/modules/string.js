@@ -3,20 +3,20 @@
 import Layout from '@/layout'
 
 const componentsRouter = {
-  path: '/str',
+  path: '/string',
   component: Layout,
   redirect: 'noRedirect',
-  name: 'Str',
+  name: 'String',
   meta: {
-    title: 'Str',
-    icon: 'str'
+    title: 'String',
+    icon: 'string'
   },
   children: [
     {
-      path: 'escape-string',
-      component: () => import('@/views/str/escape-string'),
-      name: 'escape-string',
-      meta: { title: 'escape-string' }
+      path: 'escape',
+      component: () => import('@/views/string/escape'),
+      name: 'escape',
+      meta: { title: 'escape' }
     },
     {
       path: 'markdown',

@@ -38,6 +38,9 @@ Vue.use(Element, {
   locale: enLang // 如果使用中文，无需设置，请删除
 })
 
+// Vue 全局变量
+Vue.prototype.$main = 'https://www.hyiki.website:8099'
+
 // register global utility filters
 Object.keys(filters).forEach(key => {
   Vue.filter(key, filters[key])
