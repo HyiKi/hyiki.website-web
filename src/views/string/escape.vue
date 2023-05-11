@@ -1,5 +1,5 @@
 <template>
-  <div :style="{ '--primary': primary }" class="escape-string">
+  <div class="escape-string">
     <el-divider direction="vertical" class="vertical-divider" />
     <span class="text">输入信息</span>
     <el-form ref="inputForm" :label-position="labelPosition" label-width="80px" :model="formLabelAlign">
@@ -64,7 +64,7 @@ export default {
     },
     clipboardSuccess() {
       this.$message({
-        message: 'Copy successfully',
+        message: '复制成功',
         type: 'success',
         duration: 1500
       })

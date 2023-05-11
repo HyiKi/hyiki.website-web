@@ -8,7 +8,7 @@ const componentsRouter = {
   redirect: 'noRedirect',
   name: 'String',
   meta: {
-    title: 'String',
+    title: '字符串工具',
     icon: 'string'
   },
   children: [
@@ -16,7 +16,7 @@ const componentsRouter = {
       path: 'escape',
       component: () => import('@/views/string/escape'),
       name: 'escape',
-      meta: { title: 'escape' }
+      meta: { title: '转义字符串' }
     },
     {
       path: 'markdown',
