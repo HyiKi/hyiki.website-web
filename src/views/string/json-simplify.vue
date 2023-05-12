@@ -3,8 +3,8 @@
     <el-divider direction="vertical" class="vertical-divider" />
     <span class="text">输入信息</span>
     <el-form ref="inputForm" :label-position="labelPosition" label-width="80px" :model="formLabelAlign">
-      <el-form-item label="string">
-        <el-input v-model="input" type="textarea" :rows="4" placeholder="请输入需要转义的字符串" />
+      <el-form-item label="json">
+        <el-input v-model="input" type="textarea" :rows="4" placeholder="请输入需要简化的JSON字符串" />
       </el-form-item>
       <el-form-item>
         <el-button type="primary" @click="onSubmit">提交</el-button>
@@ -14,8 +14,8 @@
     <el-divider direction="vertical" class="vertical-divider" />
     <span class="text">输出信息</span>
     <el-form ref="outputForm" :label-position="labelPosition" label-width="80px" :model="formLabelAlign">
-      <el-form-item label="escaped string">
-        <el-input id="output" v-model="output" disabled type="textarea" :rows="4" placeholder="经过转义的字符串" />
+      <el-form-item label="simplify json">
+        <el-input id="output" v-model="output" disabled type="textarea" :rows="4" placeholder="经过简化的JSON字符串" />
       </el-form-item>
       <el-form-item>
         <el-button v-clipboard:copy="output" v-clipboard:success="clipboardSuccess" type="primary" icon="el-icon-document">
@@ -42,7 +42,7 @@ export default {
   },
   methods: {
     onSubmit() {
-      const url = `${this.$main}/string/escape?input=${encodeURIComponent(this.input)}`
+      const url = `${this.$main}/string/json/simplify?input=${encodeURIComponent(this.input)}`
       fetch(url)
         .then(response => response.json())
         .then(data => {

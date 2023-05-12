@@ -19,6 +19,24 @@ const componentsRouter = {
       meta: { title: '转义字符串' }
     },
     {
+      path: 'unescape',
+      component: () => import('@/views/string/unescape'),
+      name: 'unescape',
+      meta: { title: '反转义字符串' }
+    },
+    {
+      path: 'json/pretty',
+      component: () => import('@/views/string/json-pretty'),
+      name: 'json-pretty',
+      meta: { title: '美化JSON' }
+    },
+    {
+      path: 'json/simplify',
+      component: () => import('@/views/string/json-simplify'),
+      name: 'json-simplify',
+      meta: { title: '简化JSON' }
+    },
+    {
       path: 'markdown',
       component: () => import('@/views/components-demo/markdown'),
       name: 'MarkdownDemo',
