@@ -37,6 +37,18 @@ const componentsRouter = {
       meta: { title: '简化JSON' }
     },
     {
+      path: 'xml/pretty',
+      component: () => import('@/views/string/xml-pretty'),
+      name: 'xml-pretty',
+      meta: { title: '美化Xml' }
+    },
+    {
+      path: 'xml/simplify',
+      component: () => import('@/views/string/xml-simplify'),
+      name: 'xml-simplify',
+      meta: { title: '简化Xml' }
+    },
+    {
       path: 'markdown',
       component: () => import('@/views/components-demo/markdown'),
       name: 'MarkdownDemo',
