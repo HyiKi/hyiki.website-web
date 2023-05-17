@@ -13,6 +13,7 @@ import tableRouter from './modules/table'
 import nestedRouter from './modules/nested'
 import strRouter from './modules/string'
 import cryptoRouter from './modules/crypto'
+import fileRouter from './modules/file'
 
 /**
  * Note: sub-menu only appear when route children.length >= 1
@@ -193,6 +194,7 @@ export const asyncRoutes = [
   tableRouter,
   strRouter,
   cryptoRouter,
+  fileRouter,
   {
     path: '/example',
     component: Layout,
