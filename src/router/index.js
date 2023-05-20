@@ -14,6 +14,7 @@ import nestedRouter from './modules/nested'
 import strRouter from './modules/string'
 import cryptoRouter from './modules/crypto'
 import fileRouter from './modules/file'
+import artificialRouter from './modules/artificial'
 
 /**
  * Note: sub-menu only appear when route children.length >= 1
@@ -195,6 +196,7 @@ export const asyncRoutes = [
   strRouter,
   cryptoRouter,
   fileRouter,
+  artificialRouter,
   {
     path: '/example',
     component: Layout,
