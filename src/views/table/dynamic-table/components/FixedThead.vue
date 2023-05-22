@@ -25,7 +25,7 @@
   </div>
 </template>
 
-<script>
+<script lang="ts">
 const defaultFormThead = ['apple', 'banana']
 
 export default {

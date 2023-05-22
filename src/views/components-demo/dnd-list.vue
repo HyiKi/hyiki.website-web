@@ -9,7 +9,7 @@
   </div>
 </template>
 
-<script>
+<script lang="ts">
 import DndList from '@/components/DndList'
 import { fetchList } from '@/api/article'
 

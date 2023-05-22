@@ -49,7 +49,7 @@
   </div>
 </template>
 
-<script>
+<script lang="ts">
 import MarkdownEditor from '@/components/MarkdownEditor'
 
 const content = `

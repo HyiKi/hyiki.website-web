@@ -16,7 +16,7 @@
   </div>
 </template>
 
-<script>
+<script lang="ts">
 import elDragDialog from '@/directive/el-drag-dialog' // base on element-ui
 
 export default {

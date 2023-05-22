@@ -25,7 +25,7 @@
   </div>
 </template>
 
-<script>
+<script lang="ts">
 import ScrollPane from './ScrollPane'
 import path from 'path'
 

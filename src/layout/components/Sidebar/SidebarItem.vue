@@ -24,7 +24,7 @@
   </div>
 </template>
 
-<script>
+<script lang="ts">
 import path from 'path'
 import { isExternal } from '@/utils/validate'
 import Item from './Item'

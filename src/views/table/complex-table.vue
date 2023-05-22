@@ -146,7 +146,7 @@
   </div>
 </template>
 
-<script>
+<script lang="ts">
 import { fetchList, fetchPv, createArticle, updateArticle } from '@/api/article'
 import waves from '@/directive/waves' // waves directive
 import { parseTime } from '@/utils'

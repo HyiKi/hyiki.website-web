@@ -124,7 +124,7 @@
   </div>
 </template>
 
-<script>
+<script lang="ts">
 import BackToTop from '@/components/BackToTop'
 
 export default {

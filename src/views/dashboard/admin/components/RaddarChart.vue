@@ -2,7 +2,7 @@
   <div :class="className" :style="{height:height,width:width}" />
 </template>
 
-<script>
+<script lang="ts">
 import echarts from 'echarts'
 require('echarts/theme/macarons') // echarts theme
 import resize from './mixins/resize'

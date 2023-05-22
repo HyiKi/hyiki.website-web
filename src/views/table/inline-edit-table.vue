@@ -77,7 +77,7 @@
   </div>
 </template>
 
-<script>
+<script lang="ts">
 import { fetchList } from '@/api/article'
 
 export default {

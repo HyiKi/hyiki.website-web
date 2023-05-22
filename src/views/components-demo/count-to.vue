@@ -51,7 +51,7 @@
   </div>
 </template>
 
-<script>
+<script lang="ts">
 import countTo from 'vue-count-to'
 
 export default {

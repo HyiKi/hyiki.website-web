@@ -11,7 +11,7 @@
   </div>
 </template>
 
-<script>
+<script lang="ts">
 import Tinymce from '@/components/Tinymce'
 
 export default {

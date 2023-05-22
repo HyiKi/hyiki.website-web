@@ -12,7 +12,7 @@
   </div>
 </template>
 
-<script>
+<script lang="ts">
 import { addClass, removeClass } from '@/utils'
 
 export default {

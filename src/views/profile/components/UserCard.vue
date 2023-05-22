@@ -52,7 +52,7 @@
   </el-card>
 </template>
 
-<script>
+<script lang="ts">
 import PanThumb from '@/components/PanThumb'
 
 export default {

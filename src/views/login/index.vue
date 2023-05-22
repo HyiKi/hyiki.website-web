@@ -73,7 +73,7 @@
   </div>
 </template>
 
-<script>
+<script lang="ts">
 import { validUsername } from '@/utils/validate'
 import SocialSign from './components/SocialSignin'
 

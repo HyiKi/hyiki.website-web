@@ -98,7 +98,7 @@
   </div>
 </template>
 
-<script>
+<script lang="ts">
 import Sticky from '@/components/Sticky'
 
 export default {

@@ -111,7 +111,7 @@
   </div>
 </template>
 
-<script>
+<script lang="ts">
 import PanThumb from '@/components/PanThumb'
 import MdInput from '@/components/MDinput'
 import Mallki from '@/components/TextHoverEffect/Mallki'

@@ -28,7 +28,7 @@
   </div>
 </template>
 
-<script>
+<script lang="ts">
 import clipboard from '@/directive/clipboard/index.js' // use clipboard by v-directive
 
 export default {

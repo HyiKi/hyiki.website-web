@@ -2,7 +2,7 @@
   <article-detail :is-edit="true" />
 </template>
 
-<script>
+<script lang="ts">
 import ArticleDetail from './components/ArticleDetail'
 
 export default {

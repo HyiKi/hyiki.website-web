@@ -80,7 +80,7 @@
   </div>
 </template>
 
-<script>
+<script lang="ts">
 const avatarPrefix = '?imageView2/1/w/80/h/80'
 const carouselPrefix = '?imageView2/2/h/440'
 

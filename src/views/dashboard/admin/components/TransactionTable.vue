@@ -20,7 +20,7 @@
   </el-table>
 </template>
 
-<script>
+<script lang="ts">
 import { transactionList } from '@/api/remote-search'
 
 export default {

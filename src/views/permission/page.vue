@@ -4,7 +4,7 @@
   </div>
 </template>
 
-<script>
+<script lang="ts">
 import SwitchRoles from './components/SwitchRoles'
 
 export default {

@@ -26,7 +26,7 @@
   </el-card>
 </template>
 
-<script>
+<script lang="ts">
 import { mapGetters } from 'vuex'
 import PanThumb from '@/components/PanThumb'
 import Mallki from '@/components/TextHoverEffect/Mallki'

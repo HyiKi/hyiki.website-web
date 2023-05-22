@@ -12,7 +12,7 @@
   </div>
 </template>
 
-<script>
+<script lang="ts">
 import FixedThead from './components/FixedThead'
 import UnfixedThead from './components/UnfixedThead'
 

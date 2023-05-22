@@ -44,7 +44,7 @@
   </div>
 </template>
 
-<script>
+<script lang="ts">
 import { fetchList } from '@/api/article'
 import { parseTime } from '@/utils'
 // options components

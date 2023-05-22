@@ -5,7 +5,7 @@
     <Kanban :key="3" :list="list3" :group="group" class="kanban done" header-text="Done" />
   </div>
 </template>
-<script>
+<script lang="ts">
 import Kanban from '@/components/Kanban'
 
 export default {

@@ -27,7 +27,7 @@
   </div>
 </template>
 
-<script>
+<script lang="ts">
 import ThemePicker from '@/components/ThemePicker'
 
 export default {

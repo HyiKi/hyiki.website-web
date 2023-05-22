@@ -7,7 +7,7 @@
   </div>
 </template>
 
-<script>
+<script lang="ts">
 import UploadExcelComponent from '@/components/UploadExcel/index.vue'
 
 export default {

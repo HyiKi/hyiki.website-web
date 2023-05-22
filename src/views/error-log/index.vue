@@ -15,7 +15,7 @@
   </div>
 </template>
 
-<script>
+<script lang="ts">
 import ErrorA from './components/ErrorTestA'
 import ErrorB from './components/ErrorTestB'
 

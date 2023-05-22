@@ -12,7 +12,7 @@
   </div>
 </template>
 
-<script>
+<script lang="ts">
 import ElDragSelect from '@/components/DragSelect' // base on element-ui
 
 export default {

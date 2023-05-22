@@ -23,7 +23,7 @@
   </div>
 </template>
 
-<script>
+<script lang="ts">
 import splitPane from 'vue-splitpane'
 
 export default {

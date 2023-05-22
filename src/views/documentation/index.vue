@@ -9,7 +9,7 @@
   </div>
 </template>
 
-<script>
+<script lang="ts">
 import DropdownMenu from '@/components/Share/DropdownMenu'
 
 export default {

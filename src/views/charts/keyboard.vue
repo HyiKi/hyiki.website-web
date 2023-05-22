@@ -4,7 +4,7 @@
   </div>
 </template>
 
-<script>
+<script lang="ts">
 import Chart from '@/components/Charts/Keyboard'
 
 export default {
