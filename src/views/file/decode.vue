@@ -2,7 +2,7 @@
   <div class="container">
     <el-divider direction="vertical" class="vertical-divider" />
     <span class="text">输入信息</span>
-    <el-form ref="inputForm" :label-position="labelPosition" label-width="80px" :model="formLabelAlign">
+    <el-form ref="inputForm" :label-position="labelPosition" label-width="80px">
       <el-form-item label="download file">
         <el-input v-model="input" type="textarea" :rows="4" placeholder="请输入需要提取文件的code" />
       </el-form-item>
@@ -32,7 +32,7 @@ export default {
     onSubmit() {
       const code = this.input
       axios({
-        url: `https://www.hyiki.website:8099/file/decode?input=${code}`,
+        url: `${this.$main}/file/decode?input=${code}`,
         method: 'get',
         responseType: 'blob'
       })

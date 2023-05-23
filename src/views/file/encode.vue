@@ -2,9 +2,9 @@
   <div class="container">
     <el-divider direction="vertical" class="vertical-divider" />
     <span class="text">输入信息</span>
-    <el-form ref="inputForm" :label-position="labelPosition" label-width="80px" :model="formLabelAlign">
+    <el-form ref="inputForm" :label-position="labelPosition" label-width="80px">
       <el-form-item label="upload file">
-        <el-upload ref="upload" class="upload-demo" action="https://www.hyiki.website:8099/file/encode" :auto-upload="false" drag :on-success="uploadFileSuccess" limit="1">
+        <el-upload ref="upload" class="upload-demo" :action="`${this.$main}/file/encode`" :auto-upload="false" drag :on-success="uploadFileSuccess" limit="1">
           <i class="el-icon-upload" />
           <div class="el-upload__text">将文件拖到此处，或<em>点击上传</em></div>
         </el-upload>
@@ -16,7 +16,7 @@
     <el-divider />
     <el-divider direction="vertical" class="vertical-divider" />
     <span class="text">输出信息</span>
-    <el-form ref="outputForm" :label-position="labelPosition" label-width="80px" :model="formLabelAlign">
+    <el-form ref="outputForm" :label-position="labelPosition" label-width="80px">
       <el-form-item label="code">
         <el-input id="output" v-model="output" disabled type="textarea" :rows="4" placeholder="用于提取文件的code" />
       </el-form-item>
