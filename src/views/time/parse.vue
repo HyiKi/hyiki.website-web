@@ -3,10 +3,8 @@
     <el-divider direction="vertical" class="vertical-divider" />
     <span class="text">输入信息</span>
     <el-form ref="inputForm" :label-position="labelPosition" label-width="80px" :model="formLabelAlign">
-      <el-form-item label="secret">
-        <el-select v-model="input" placeholder="请选择">
-          <el-option v-for="item in options" :key="item.value" :label="item.label" :value="item.value" />
-        </el-select>
+      <el-form-item label="string">
+        <el-input v-model="input" type="textarea" :rows="4" placeholder="请输入需要转义的字符串" />
       </el-form-item>
       <el-form-item>
         <el-button type="primary" @click="onSubmit">提交</el-button>
@@ -16,8 +14,8 @@
     <el-divider direction="vertical" class="vertical-divider" />
     <span class="text">输出信息</span>
     <el-form ref="outputForm" :label-position="labelPosition" label-width="80px" :model="formLabelAlign">
-      <el-form-item label="code">
-        <el-input id="output" v-model="output" disabled type="textarea" :rows="4" placeholder="六位的认证码" />
+      <el-form-item label="escaped string">
+        <el-input id="output" v-model="output" disabled type="textarea" :rows="4" placeholder="经过转义的字符串" />
       </el-form-item>
       <el-form-item>
         <el-button v-clipboard:copy="output" v-clipboard:success="clipboardSuccess" type="primary" icon="el-icon-document">
@@ -28,7 +26,7 @@
   </div>
 </template>
 
-<script>
+<script lang="ts">
 import clipboard from '@/directive/clipboard/index.js' // use clipboard by v-directive
 
 export default {
@@ -38,21 +36,13 @@ export default {
   data() {
     return {
       labelPosition: 'top',
-      input: 'aliyun_mfa',
-      output: '',
-      options: [{
-        value: 'aliyun_mfa',
-        label: '阿里云'
-      }]
+      input: '',
+      output: ''
     }
-  },
-  // mounted 初始化
-  mounted() {
-    this.onSubmit()
   },
   methods: {
     onSubmit() {
-      const url = `${this.$main}/crypto/totp?input=${encodeURIComponent(this.input)}`
+      const url = `${this.$main}/string/escape?input=${encodeURIComponent(this.input)}`
       fetch(url)
         .then(response => response.json())
         .then(data => {

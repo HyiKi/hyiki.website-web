@@ -16,6 +16,7 @@ import cryptoRouter from './modules/crypto'
 import fileRouter from './modules/file'
 import artificialRouter from './modules/artificial'
 import openRouter from './modules/open'
+import timeRouter from './modules/time'
 
 /**
  * Note: sub-menu only appear when route children.length >= 1
@@ -199,6 +200,7 @@ export const asyncRoutes = [
   fileRouter,
   artificialRouter,
   openRouter,
+  timeRouter,
   {
     path: '/example',
     component: Layout,
