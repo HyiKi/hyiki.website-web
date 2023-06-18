@@ -37,27 +37,31 @@
     <el-divider direction="vertical" class="vertical-divider" />
     <span class="text">输出信息</span>
     <el-form ref="outputForm" :label-position="labelPosition" label-width="80px" :model="formLabelAlign">
-      <el-form-item v-if="radio != 'TIME'" label="日期">
-        <el-input id="dateVal" v-model="dateVal" disabled placeholder="yyyy/MM/dd HH:mm:ss" />
-      </el-form-item>
-      <el-form-item v-if="radio != 'TIME'" label="时间戳">
-        <el-input id="timestampVal" v-model="timestampVal" disabled placeholder="" />
-      </el-form-item>
-      <el-form-item v-if="radio === 'TIME'" label="天">
-        <el-input id="dayVal" v-model="dayVal" disabled />
-      </el-form-item>
-      <el-form-item v-if="radio === 'TIME'" label="时">
-        <el-input id="hourVal" v-model="hourVal" disabled />
-      </el-form-item>
-      <el-form-item v-if="radio === 'TIME'" label="分">
-        <el-input id="minuteVal" v-model="minuteVal" disabled />
-      </el-form-item>
-      <el-form-item v-if="radio === 'TIME'" label="秒">
-        <el-input id="secondVal" v-model="secondVal" disabled />
-      </el-form-item>
-      <el-form-item v-if="radio === 'TIME'" label="毫秒">
-        <el-input id="millisecondVal" v-model="millisecondVal" disabled />
-      </el-form-item>
+      <div v-if="radio != 'TIME'">
+        <el-form-item label="日期">
+          <el-input id="dateVal" v-model="dateVal" disabled placeholder="yyyy/MM/dd HH:mm:ss" />
+        </el-form-item>
+        <el-form-item label="时间戳">
+          <el-input id="timestampVal" v-model="timestampVal" disabled placeholder="" />
+        </el-form-item>
+      </div>
+      <div v-if="radio === 'TIME'">
+        <el-form-item label="天">
+          <el-input id="dayVal" v-model="dayVal" disabled />
+        </el-form-item>
+        <el-form-item label="时">
+          <el-input id="hourVal" v-model="hourVal" disabled />
+        </el-form-item>
+        <el-form-item label="分">
+          <el-input id="minuteVal" v-model="minuteVal" disabled />
+        </el-form-item>
+        <el-form-item label="秒">
+          <el-input id="secondVal" v-model="secondVal" disabled />
+        </el-form-item>
+        <el-form-item label="毫秒">
+          <el-input id="millisecondVal" v-model="millisecondVal" disabled />
+        </el-form-item>
+      </div>
     </el-form>
   </div>
 </template>
