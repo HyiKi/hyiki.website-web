@@ -25,6 +25,7 @@
         <el-button type="primary" @click="onSubmit">提交</el-button>
       </el-form-item>
     </el-form>
+    <el-divider />
     <el-divider direction="vertical" class="vertical-divider" />
     <span class="text">输出信息</span>
     <el-form ref="outputForm" :label-position="labelPosition" :model="formLabelAlign">
