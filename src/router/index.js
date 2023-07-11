@@ -19,6 +19,8 @@ import openRouter from './modules/open'
 import timeRouter from './modules/time'
 import monitorRouter from './modules/monitor'
 import excelRouter from './modules/excel'
+import nasRouter from './modules/nas'
+import searchRouter from './modules/search'
 
 /**
  * Note: sub-menu only appear when route children.length >= 1
@@ -205,6 +207,8 @@ export const asyncRoutes = [
   timeRouter,
   monitorRouter,
   excelRouter,
+  nasRouter,
+  searchRouter,
   {
     path: '/example',
     component: Layout,
