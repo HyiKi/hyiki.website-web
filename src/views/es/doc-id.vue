@@ -42,6 +42,12 @@ export default {
       content: ''
     }
   },
+  mounted() {
+    this.id = this.$route.query.id
+    if (this.id) {
+      this.onSubmit()
+    }
+  },
   methods: {
     onSubmit() {
       const { id } = this

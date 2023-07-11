@@ -96,7 +96,7 @@ export default {
         })
     },
     generateLink(id) {
-      return `/es/doc/id?id=${id}`
+      return `/#/es/doc/id?id=${id}`
     }
   }
 }
